@@ -1,0 +1,33 @@
+@keyframes latir {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+body {
+    background-image: url('Hellokitty2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.image-latir {
+    cursor: pointer;
+    animation: latir 1s infinite;
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+}
+
+.image-latir:hover {
+    animation: latir 0.8s infinite;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
